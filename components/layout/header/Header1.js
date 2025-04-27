@@ -16,7 +16,7 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                     <i className="icon-envelope"></i>
                                 </div>
                                 <div className="text">
-                                    <p><Link href="mailto:example@gamil.com">example@gamil.com</Link>
+                                    <p><Link href="mailto:example@gamil.com">contacto@guardianesdepatitas.com</Link>
                                     </p>
                                 </div>
                             </li>
@@ -25,13 +25,13 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                     <i className="icon-pin-two"></i>
                                 </div>
                                 <div className="text">
-                                    <p>12 Green Road, 05 New York</p>
+                                    <p>Calle falsa 132, Gerli</p>
                                 </div>
                             </li>
                         </ul>
                         <div className="main-menu__top-right">
                             <div className="main-menu__social-box">
-                                <p className="main-menu__social-title">Follow Us On:</p>
+                                <p className="main-menu__social-title">Seguinos en las redes:</p>
                                 <div className="main-menu__social">
                                     <Link href="#"><i className="icon-facebook"></i></Link>
                                     <Link href="#"><i className="icon-twitter"></i></Link>
@@ -63,18 +63,10 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                         <i className="icon-call"></i>
                                     </div>
                                     <div className="main-menu__call-content">
-                                        <p className="main-menu__call-sub-title">Call Anytime</p>
-                                        <h5 className="main-menu__call-number"><Link href="tel:9288006780">+92 ( 8800 ) -
-                                                6780</Link></h5>
+                                        <p className="main-menu__call-sub-title">Contactanos</p>
+                                        <h5 className="main-menu__call-number"><Link href="tel:+5491112345678">+54 911 1234 5678</Link></h5>
                                     </div>
-                                </div>
-                                <div className="main-menu__search-box">
-                                    <Link href="#" className="main-menu__search search-toggler icon-search" onClick={handlePopup}></Link>
-                                </div>
-                                <div className="main-menu__btn-box">
-                                    <Link href="donation-details" className="main-menu__btn thm-btn">Donate Now<span><i
-                                                className="icon-arrow-right"></i></span></Link>
-                                </div>
+                                </div>                               
                             </div>
                         </div>
                     </div>
@@ -84,7 +76,7 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
 
         <div className={`stricky-header stricked-menu main-menu ${scroll ? "stricky-fixed" : ""}`}>
             <div className="sticky-header__content">
-                <nav className="main-menu">
+                <nav className="main-menu"> 
                     <div className="main-menu__wrapper">
                         <div className="container">
                             <div className="main-menu__wrapper-inner">
@@ -103,17 +95,9 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                             <i className="icon-call"></i>
                                         </div>
                                         <div className="main-menu__call-content">
-                                            <p className="main-menu__call-sub-title">Call Anytime</p>
-                                            <h5 className="main-menu__call-number"><Link href="tel:9288006780">+92 ( 8800 ) -
-                                                    6780</Link></h5>
+                                            <p className="main-menu__call-sub-title">Llamanos</p>
+                                            <h5 className="main-menu__call-number"><Link href="tel:5491112345678">54 911 1234 5678</Link></h5>
                                         </div>
-                                    </div>
-                                    <div className="main-menu__search-box">
-                                        <Link href="#" className="main-menu__search search-toggler icon-search" onClick={handlePopup}></Link>
-                                    </div>
-                                    <div className="main-menu__btn-box">
-                                        <Link href="donation-details" className="main-menu__btn thm-btn">Donate Now<span><i
-                                                    className="icon-arrow-right"></i></span></Link>
                                     </div>
                                 </div>
                             </div>

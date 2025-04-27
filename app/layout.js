@@ -6,8 +6,8 @@ import "swiper/css/pagination"
 import 'swiper/css/free-mode';
 import { dmSans, libreBaskerville } from '@/lib/font'
 export const metadata = {
-    title: 'Anity',
-    description: 'Charity & Donation react next Js template',
+    title: 'Guardines de Patitas',
+    description: 'Rescatamos vidas, construimos hogares',
 }
 
 export default function RootLayout({ children }) {

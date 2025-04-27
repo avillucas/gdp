@@ -18,16 +18,6 @@ export default function Home() {
         <>
             <Layout headerStyle={1} footerStyle={1}>
                 <Banner />
-                <Welcome />
-                <About />
-                <Found />
-                <Donation />
-                <Donate />
-                <Who />
-                <Event />
-                <Testimonial />
-                <Blog />
-                <Country />
                 <Cta />
             </Layout>
 
