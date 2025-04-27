@@ -12,7 +12,7 @@ export default function Home() {
                 <div className="contact-one__inner">
                     <div className="section-title text-left sec-title-animation animation-style2">
                         <div className="section-title__tagline-box">
-                            <span className="section-title__tagline">Contact Us</span>
+                            <span className="section-title__tagline">Contactanos</span>
                         </div>
                         <h2 className="section-title__title title-animation">Empowering Communities<br/> through Donations
                         </h2>
