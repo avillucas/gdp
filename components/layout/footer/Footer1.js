@@ -8,7 +8,7 @@ export default function Footer1() {
             <div className="site-footer__top">
                 <div className="container">
                     <div className="site-footer__top-inner">
-                        <div className="row">
+                        <div className="row justify-content-between">
                             <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div className="footer-widget__about">
                                     <div className="footer-widget__about-logo">
