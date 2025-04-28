@@ -14,14 +14,14 @@ export default function Home() {
                         <div className="section-title__tagline-box">
                             <span className="section-title__tagline">Contactanos</span>
                         </div>
-                        <h2 className="section-title__title title-animation">Empowering Communities<br/> through Donations
+                        <h2 className="section-title__title title-animation">Envianos tus dudas o donaciones 
                         </h2>
                     </div>
                     <form className="contact-form-validated contact-one__form"
                         method="post" >
                         <div className="row">
                             <div className="col-xl-6 col-lg-6">
-                                <h4 className="contact-one__input-title">Your Name</h4>
+                                <h4 className="contact-one__input-title">Nombre</h4>
                                 <div className="contact-one__input-box">
                                     <div className="contact-one__input-icon">
                                         <span className="icon-user"></span>
@@ -30,7 +30,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="col-xl-6 col-lg-6">
-                                <h4 className="contact-one__input-title">Email Address</h4>
+                                <h4 className="contact-one__input-title">Correo electrónico</h4>
                                 <div className="contact-one__input-box">
                                     <div className="contact-one__input-icon">
                                         <span className="icon-pin"></span>
@@ -39,7 +39,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="col-xl-12">
-                                <h4 className="contact-one__input-title">Your phone</h4>
+                                <h4 className="contact-one__input-title">Telefono</h4>
                                 <div className="contact-one__input-box">
                                     <div className="contact-one__input-icon">
                                         <span className="icon-call"></span>
@@ -48,15 +48,15 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="col-xl-12">
-                                <h4 className="contact-one__input-title">Message</h4>
+                                <h4 className="contact-one__input-title">Mensaje</h4>
                                 <div className="contact-one__input-box text-message-box">
                                     <div className="contact-one__input-icon">
                                         <span className="icon-envelope"></span>
                                     </div>
-                                    <textarea name="message" placeholder="write message.."></textarea>
+                                    <textarea name="message" placeholder="Escribinos tu mensaje.."></textarea>
                                 </div>
                                 <div className="contact-one__btn-box">
-                                    <button type="submit" className="thm-btn contact-one__btn">Send Messege<span><i
+                                    <button type="submit" className="thm-btn contact-one__btn">Enviar<span><i
                                                 className="icon-arrow-right"></i></span></button>
                                 </div>
                             </div>
