@@ -37,7 +37,7 @@ export default function Banner() {
                 <SwiperSlide>
                 <div className="swiper-slide">
                         <div className="image-layer"
-                            style={{ backgroundImage: ' url(assets/images/slider/slider-v1-img-1.jpg)' }}>
+                            style={{ backgroundImage: ' url(assets/images/slider/portada-1.png)' }}>
                         </div>
                         <div className="image-layer__left-gradient"
                             style={{ backgroundImage: ' url(assets/images/shapes/slider-bg1.jpg)' }}></div>
@@ -49,7 +49,7 @@ export default function Banner() {
                                     </div>
                                     <div className="big-title">
                                         <h2>
-                                            Together, we can<br/> make the world<br/> better
+                                            Rescatamos vidas, <br/>construimos hogares
                                         </h2>
                                     </div>
                                     <div className="btn-box">
@@ -68,7 +68,7 @@ export default function Banner() {
                 <SwiperSlide>
                 <div className="swiper-slide">
                         <div className="image-layer"
-                            style={{ backgroundImage: ' url(assets/images/slider/slider-v1-img-2.jpg)' }}>
+                            style={{ backgroundImage: ' url(assets/images/slider/portada-2.png)' }}>
                         </div>
                         <div className="image-layer__left-gradient"
                             style={{ backgroundImage: ' url(assets/images/shapes/slider-bg1.jpg)' }}></div>
@@ -80,7 +80,7 @@ export default function Banner() {
                                     </div>
                                     <div className="big-title">
                                         <h2>
-                                            Give a little<br/> change you <br/>a lot
+                                            Ayudanos con tu <br/>donación
                                         </h2>
                                     </div>
                                     <div className="btn-box">
@@ -99,7 +99,7 @@ export default function Banner() {
                 <SwiperSlide>
                 <div className="swiper-slide">
                         <div className="image-layer"
-                            style={{ backgroundImage: ' url(assets/images/slider/slider-v1-img-3.jpg)' }}>
+                            style={{ backgroundImage: ' url(assets/images/slider/portada-3.png)' }}>
                         </div>
                         <div className="image-layer__left-gradient"
                             style={{ backgroundImage: ' url(assets/images/shapes/slider-bg1.jpg)' }}></div>
@@ -111,7 +111,7 @@ export default function Banner() {
                                     </div>
                                     <div className="big-title">
                                         <h2>
-                                            Every gift counts<br/> your Every life<br/> matters
+                                            Buscamos hogares <br/>para nuestros rescatados
                                         </h2>
                                     </div>
                                     <div className="btn-box">
