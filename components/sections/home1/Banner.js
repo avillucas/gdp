@@ -40,12 +40,12 @@ export default function Banner() {
                             style={{ backgroundImage: ' url(assets/images/slider/portada-1.png)' }}>
                         </div>
                         <div className="image-layer__left-gradient"
-                            style={{ backgroundImage: ' url(assets/images/shapes/slider-bg1.jpg)' }}></div>
+                            style={{ backgroundImage: ' urlassets/images/slider/portada-1.png)' }}></div>
                         <div className="container">
                             <div className="main-slider-content">
                                 <div className="main-slider-content__inner">
                                     <div className="sub-title">
-                                        <h4>We help companies</h4>
+                                    <h4>Guardianes de patitas</h4>
                                     </div>
                                     <div className="big-title">
                                         <h2>
@@ -53,8 +53,8 @@ export default function Banner() {
                                         </h2>
                                     </div>
                                     <div className="btn-box">
-                                        <a href="donation-details.html" className="thm-btn">
-                                            Donate Now
+                                        <a href="contact" className="thm-btn">
+                                           Contactanos
                                             <span>
                                                 <i className="icon-arrow-right"></i>
                                             </span>
@@ -71,12 +71,12 @@ export default function Banner() {
                             style={{ backgroundImage: ' url(assets/images/slider/portada-2.png)' }}>
                         </div>
                         <div className="image-layer__left-gradient"
-                            style={{ backgroundImage: ' url(assets/images/shapes/slider-bg1.jpg)' }}></div>
+                            style={{ backgroundImage: ' url(assets/images/slider/portada-2.png)' }}></div>
                         <div className="container">
                             <div className="main-slider-content">
                                 <div className="main-slider-content__inner">
                                     <div className="sub-title">
-                                        <h4>We help companies</h4>
+                                    <h4>Guardianes de patitas</h4>
                                     </div>
                                     <div className="big-title">
                                         <h2>
@@ -84,8 +84,8 @@ export default function Banner() {
                                         </h2>
                                     </div>
                                     <div className="btn-box">
-                                        <a href="donation-details.html" className="thm-btn">
-                                            Donate Now
+                                    <a href="contact" className="thm-btn">
+                                           Contactanos
                                             <span>
                                                 <i className="icon-arrow-right"></i>
                                             </span>
@@ -102,12 +102,12 @@ export default function Banner() {
                             style={{ backgroundImage: ' url(assets/images/slider/portada-3.png)' }}>
                         </div>
                         <div className="image-layer__left-gradient"
-                            style={{ backgroundImage: ' url(assets/images/shapes/slider-bg1.jpg)' }}></div>
+                            style={{ backgroundImage: ' url(assets/images/slider/portada-3.png)' }}></div>
                         <div className="container">
                             <div className="main-slider-content">
                                 <div className="main-slider-content__inner">
                                     <div className="sub-title">
-                                        <h4>We help companies</h4>
+                                        <h4>Guardianes de patitas</h4>
                                     </div>
                                     <div className="big-title">
                                         <h2>
@@ -115,8 +115,8 @@ export default function Banner() {
                                         </h2>
                                     </div>
                                     <div className="btn-box">
-                                        <a href="donation-details.html" className="thm-btn">
-                                            Donate Now
+                                    <a href="contact" className="thm-btn">
+                                           Contactanos
                                             <span>
                                                 <i className="icon-arrow-right"></i>
                                             </span>

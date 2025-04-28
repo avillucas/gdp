@@ -5,7 +5,7 @@ export default function Home() {
 
     return (
         <>
-        <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Contact">
+        <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Contacto">
         {/*Contact One Start*/}
         <section className="contact-one">
             <div className="container">
@@ -87,8 +87,8 @@ export default function Home() {
                                         <span className="icon-pin-two"></span>
                                     </div>
                                     <div className="content">
-                                        <h4>Address</h4>
-                                        <p>2972 Westheimer Rd. Santa </p>
+                                        <h4>Dirección</h4>
+                                        <p>Calle falsa 123, Gerli</p>
                                     </div>
                                 </li>
                                 <li>
@@ -96,8 +96,8 @@ export default function Home() {
                                         <span className="icon-envelope"></span>
                                     </div>
                                     <div className="content">
-                                        <h4>Email Address</h4>
-                                        <p><Link href="mailto:nevaeh.sons@example.com">nevaeh.sons@example.com</Link></p>
+                                        <h4>Correo electrónico</h4>
+                                        <p><Link href="mailto:contacto@guardianesdepatitas.com">contacto@guardianesdepatitas.com</Link></p>
                                     </div>
                                 </li>
                                 <li>
@@ -105,8 +105,8 @@ export default function Home() {
                                         <span className="icon-call"></span>
                                     </div>
                                     <div className="content">
-                                        <h4>Phone number</h4>
-                                        <p><Link href="tel:7045550127">(704) 555-0127</Link></p>
+                                        <h4>Teléfono</h4>
+                                        <p><Link href="tel:+5491112345678">+54 911 1234 5678</Link></p>
                                     </div>
                                 </li>
                             </ul>
