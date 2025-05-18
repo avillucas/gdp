@@ -13,8 +13,20 @@ export default function DonacionaMonetaria() {
         <section className="donation-one" id="donaciones">
             <div className="donation-one__wrapper">
                 <div className="donation-one__left">
-                    <div className="donation-one__left-bg"
-                        style={{ backgroundImage: ' url(assets/images/backgrounds/donation-one-left-bg.jpg)' }} ></div>
+                    <div >
+                        Transferencia Bancaria<br/>
+Doná el importe que quieras directamente en nuestra cuenta.
+<br/><br/>
+Banco Provincia
+<br/><br/>
+Alias: PROYECTO-4-PATAS
+<br/><br/>
+CBU: 0140059501500205063480<br/>
+Asociación Civil Proyecto 4 Patas<br/>
+Cuenta Corriente en pesos Nº 50634/8<br/>
+Sucursal Nº: 05002 – San Antonio de Padua<br/>
+CUIT: 30-71080554-3
+                    </div>
                 </div>
                 <div className="donation-one__right">
                     <div className="donation-one__content-box">

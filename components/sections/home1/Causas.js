@@ -22,7 +22,7 @@ export default function Causas() {
                                 </div>
                             </div>
                             <div className="found-one__content">
-                                <h4 className="found-one__title"><Link href="donation-details">Pirata</Link></h4>
+                                <h4 className="found-one__title"><Link href="https://link.mercadopago.com.ar/proyecto4patass">Pirata</Link></h4>
                                 <p className="found-one__text">Sufrio una amputación y reacudamos para su silla de Ruedas ajustable para patas traseras</p>
                                 <div className="found-one__goals">
                                     <div className="found-one__raised">
@@ -41,7 +41,7 @@ export default function Causas() {
                                     </div>
                                 </div>
                                 <div className="found-one__btn-box">
-                                    <Link href="donation-details" className="found-one__btn thm-btn">¡Doná Ahora!<span><i
+                                    <Link href="https://link.mercadopago.com.ar/proyecto4patas" className="found-one__btn thm-btn">¡Doná Ahora!<span><i
                                                 className="icon-arrow-right"></i></span></Link>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@ export default function Causas() {
                                 </div>
                             </div>
                             <div className="found-one__content">
-                                <h4 className="found-one__title"><Link href="donation-details">Ceniza</Link></h4>
+                                <h4 className="found-one__title"><Link href="https://link.mercadopago.com.ar/proyecto4patas">Ceniza</Link></h4>
                                 <p className="found-one__text">Necesita un marcapasos por un problema congenito del corazón</p>
                                 <div className="found-one__goals">
                                     <div className="found-one__raised">
@@ -94,8 +94,8 @@ export default function Causas() {
                                 </div>
                             </div>
                             <div className="found-one__content">
-                                <h4 className="found-one__title"><Link href="donation-details">Roque</Link></h4>
-                                <p className="found-one__text"></p>
+                                <h4 className="found-one__title"><Link href="https://link.mercadopago.com.ar/proyecto4patas">Roque</Link></h4>
+                                <p className="found-one__text"> Necesita una cirugía plastica reconstructiva de la cabidad ocular a causa de un tumor </p>
                                 <div className="found-one__goals">
                                     <div className="found-one__raised">
                                         <p>Acumulado</p>
@@ -113,7 +113,7 @@ export default function Causas() {
                                     </div>
                                 </div>
                                 <div className="found-one__btn-box">
-                                    <Link href="donation-details" className="found-one__btn thm-btn">¡Doná Ahora!<span><i
+                                    <Link href="https://link.mercadopago.com.ar/proyecto4patas" className="found-one__btn thm-btn">¡Doná Ahora!<span><i
                                                 className="icon-arrow-right"></i></span></Link>
                                 </div>
                             </div>
