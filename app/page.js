@@ -1,10 +1,11 @@
 import Layout from "@/components/layout/Layout"
 import Novedades from "@/components/sections/home1/Novedades"
 import Buscados from "@/components/sections/home1/Buscados"
-import DonacionesMonetarias from "@/components/sections/home1/DonacionesMonetarias"
 import Adoptables from "@/components/sections/home1/Adoptables"
 import Causas from "@/components/sections/home1/Causas"
 import DonacionMaterial from "@/components/sections/home1/DonacionMaterial"
+import DonacionesMonetarias from "@/components/sections/home1/DonacionesMonetarias"
+import Found from "@/components/sections/home1/Found"
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
                 <Buscados />
                 <DonacionMaterial />
                 <Causas/>
+                <Found
                 <DonacionesMonetarias />
                 <Adoptables/>
             </Layout>
