@@ -9,9 +9,9 @@ export default function Buscados() {
             <div className="container">
                 <div className="section-title text-center sec-title-animation animation-style1">
                     <div className="section-title__tagline-box">
-                        <span className="section-title__tagline">News And Blogs</span>
+                        <span className="section-title__tagline">¿Los viste?</span>
                     </div>
-                    <h2 className="section-title__title title-animation">Lending a Hand<br/> Spreading Hope</h2>
+                    <h2 className="section-title__title title-animation">Ayudalos a reencontrarse <br/>con sus familias</h2>
                 </div>
                 <div className="row">
                     {/*Blog One Single Start*/}
@@ -19,17 +19,16 @@ export default function Buscados() {
                         <div className="blog-one__single">
                             <div className="blog-one__img-box">
                                 <div className="blog-one__img">
-                                    <img src="assets/images/blog/blog-1-1.jpg" alt=""/>
+                                    <img src="assets/images/buscados/bianca-1.jpg" alt=""/>
                                 </div>
                                 <div className="blog-one__date">
                                     <p>20<span><br/>feb</span></p>
                                 </div>
                             </div>
                             <div className="blog-one__content">
-                                <h4 className="blog-one__title"><Link href="blog-details">Caring for the Elderly and
-                                        Vulnerable Strategy </Link></h4>
+                                <h4 className="blog-one__title"><Link href="https://wa.me/15551234567?text=Hola.%2C%20Vi%20a%20Bianca%20en%20la%20zona%20de%20....">Se perdió en la zona de plaza Alsina, reconoce su nombre, ofrecemos recompensa </Link></h4>
                                 <div className="blog-one__btn-box">
-                                    <Link href="blog-details" className="blog-one__btn thm-btn">rEAD mORe<span><i
+                                    <Link href="https://wa.me/15551234567?text=Hola.%2C%20Vi%20a%20Bianca%20en%20la%20zona%20de%20...." className="blog-one__btn thm-btn">Sabes algo, ¡Avisanos!<span><i
                                                 className="icon-arrow-right"></i></span></Link>
                                 </div>
                             </div>
@@ -41,17 +40,16 @@ export default function Buscados() {
                         <div className="blog-one__single">
                             <div className="blog-one__img-box">
                                 <div className="blog-one__img">
-                                    <img src="assets/images/blog/blog-1-2.jpg" alt=""/>
+                                    <img src="assets/images/buscados/henry-1.jpg" alt=""/>
                                 </div>
                                 <div className="blog-one__date">
                                     <p>15<span><br/>Nov</span></p>
                                 </div>
                             </div>
                             <div className="blog-one__content">
-                                <h4 className="blog-one__title"><Link href="blog-details">Our Goal Is Help The Poor Child
-                                        Around The World</Link></h4>
+                                <h4 className="blog-one__title"><Link href="https://wa.me/15551234567?text=Hola.%2C%20Vi%20a%Henry%20en%20la%20zona%20de%20....">Henry se escapó asustado por la última tormenta en la ciudad Zona Monroe y Olazába</Link></h4>
                                 <div className="blog-one__btn-box">
-                                    <Link href="blog-details" className="blog-one__btn thm-btn">rEAD mORe<span><i
+                                    <Link href="https://wa.me/15551234567?text=Hola.%2C%20Vi%20a%Henry%20en%20la%20zona%20de%20...." className="blog-one__btn thm-btn">Sabes algo, ¡Avisanos!<span><i
                                                 className="icon-arrow-right"></i></span></Link>
                                 </div>
                             </div>
@@ -63,17 +61,16 @@ export default function Buscados() {
                         <div className="blog-one__single">
                             <div className="blog-one__img-box">
                                 <div className="blog-one__img">
-                                    <img src="assets/images/blog/blog-1-3.jpg" alt=""/>
+                                    <img src="assets/images/buscados/joaco-1.jpg" alt=""/>
                                 </div>
                                 <div className="blog-one__date">
                                     <p>25<span><br/>Jun</span></p>
                                 </div>
                             </div>
                             <div className="blog-one__content">
-                                <h4 className="blog-one__title"><Link href="blog-details">Education For Poor Children Is A
-                                        Must Now</Link></h4>
+                                <h4 className="blog-one__title"><Link href="https://wa.me/15551234567?text=Hola.%2C%20Vi%20a%20Joaco%20en%20la%20zona%20de%20....">Joaco se perdió en plaza Armenia, tenía su collar rojo. Lo espera su hermano humano con TEA</Link></h4>
                                 <div className="blog-one__btn-box">
-                                    <Link href="blog-details" className="blog-one__btn thm-btn">rEAD mORe<span><i
+                                    <Link href="https://wa.me/15551234567?text=Hola.%2C%20Vi%20a%20Joaco%20en%20la%20zona%20de%20...." className="blog-one__btn thm-btn">Sabes algo, ¡Avisanos!<span><i
                                                 className="icon-arrow-right"></i></span></Link>
                                 </div>
                             </div>

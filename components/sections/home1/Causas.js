@@ -9,7 +9,7 @@ export default function Causas() {
                     <div className="section-title__tagline-box">
                         <span className="section-title__tagline">Ayudalos</span>
                     </div>
-                    <h2 className="section-title__title title-animation">Juntos podemos <br/> <span>Salvar</span> sus vidas
+                    <h2 className="section-title__title title-animation"><span>Juntos podemos Salvar sus vidas</span>
                     </h2>
                 </div>
                 <div className="row">
@@ -77,7 +77,7 @@ export default function Causas() {
                                     </div>
                                 </div>
                                 <div className="found-one__btn-box">
-                                    <Link href="donation-details" className="found-one__btn thm-btn">¡Doná Ahora!<span><i
+                                    <Link href="https://link.mercadopago.com.ar/proyecto4patas" className="found-one__btn thm-btn">¡Doná Ahora!<span><i
                                                 className="icon-arrow-right"></i></span></Link>
                                 </div>
                             </div>

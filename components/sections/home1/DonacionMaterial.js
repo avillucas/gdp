@@ -6,10 +6,13 @@ export default function DonacionMaterial() {
        {/*Donate One Start */}
        <section className="donate-one pdt">
             <div className="container">
+                 <div className="section-title text-center sec-title-animation animation-style1">
+                    <h2 className="section-title__title title-animation">Tambien podes colaborar</h2>
+                </div>
                 <div className="row">
-                    <div className="col-xl-6 col-lg-6 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
+                    <div className="col-xl-4 col-lg-4 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                         <div className="donate-one__single">
-                            <h3 className="donate-one__title"><Link href="donation-details">Medicamentos de Humanos</Link>
+                            <h3 className="donate-one__title"><Link href="https://wa.me/15551234567?text=Quiero%20hacer%20una%20donaci%C3%B3n">Medicamentos de Humanos</Link>
                             </h3>
                             <p className="donate-one__text">
                                 Cefalexina en comprimidos de 500mg – 1g o suspensión<br/>
@@ -18,19 +21,17 @@ export default function DonacionMaterial() {
                                 Complejo vitamínico del Grupo B (B1, B6, B12) en comprimidos o inyectable<br/>
                                 Vitamina B12 en cápsulas o comprimidos<br/>
                                 Tramadol en comprimidos o inyectable<br/>
-                                Prednisolona 4, 8 y 40 mg en comprimidos<br/>
-                                Acemuk comprimidos, jarabe<br/>
-                                Doxiciclina comprimidos
+                                Prednisolona 4, 8 y 40 mg 
                             </p>
                             <div className="donate-one__btn-box">
-                                <Link href="donation-details" className="donate-one__btn thm-btn">Donate Now<span><i
+                                <Link href="https://wa.me/15551234567?text=Quiero%20hacer%20una%20donaci%C3%B3n" className="donate-one__btn thm-btn">¡Dona Ahora!<span><i
                                             className="icon-arrow-right"></i></span></Link>
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-6 col-lg-6 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+                    <div className="col-xl-4 col-lg-4 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
                         <div className="donate-one__single donate-one__single-2">
-                            <h3 className="donate-one__title"><Link href="become-volunteer">Medicamentos de Veterinaria</Link></h3>
+                            <h3 className="donate-one__title"><Link href="https://wa.me/15551234567?text=Quiero%20hacer%20una%20donaci%C3%B3n">Medicamentos de Veterinaria</Link></h3>
                             <p className="donate-one__text">
                                 Zaleas<br/>
                                 Pañales adultos G, XG y XXG<br/>
@@ -44,16 +45,14 @@ export default function DonacionMaterial() {
                                 Tela adhesiva
                             </p>
                             <div className="donate-one__btn-box">
-                                <Link href="become-volunteer" className="donate-one__btn thm-btn">Join Now<span><i
+                                <Link href="https://wa.me/15551234567?text=Quiero%20hacer%20una%20donaci%C3%B3n" className="donate-one__btn thm-btn">¡Dona Ahora!<span><i
                                             className="icon-arrow-right"></i></span></Link>
                             </div>
                         </div>
                     </div>
-                </div>
-                  <div className="row">
-                    <div className="col-xl-6 col-lg-6 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
+                    <div className="col-xl-4 col-lg-4 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                         <div className="donate-one__single">
-                            <h3 className="donate-one__title"><Link href="donation-details">Insumos de Enfermería</Link>
+                            <h3 className="donate-one__title"><Link href="https://wa.me/15551234567?text=Quiero%20hacer%20una%20donaci%C3%B3n">Insumos de Enfermería</Link>
                             </h3>
                             <p className="donate-one__text">
                                 Zaleas<br/>
@@ -68,23 +67,12 @@ export default function DonacionMaterial() {
                                 Tela adhesiva
                             </p>
                             <div className="donate-one__btn-box">
-                                <Link href="donation-details" className="donate-one__btn thm-btn">Comunicate con nosotros<span><i
+                                <Link href="https://wa.me/15551234567?text=Quiero%20hacer%20una%20donaci%C3%B3n" className="donate-one__btn thm-btn">¡Dona Ahora!<span><i
                                             className="icon-arrow-right"></i></span></Link>
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-6 col-lg-6 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
-                        <div className="donate-one__single donate-one__single-2">
-                            <h3 className="donate-one__title"><Link href="become-volunteer">Voluntariado</Link></h3>
-                            <p className="donate-one__text">
-                                Sumate a nuestro equipo de voluntarios para ayudarnos en las tareas de limpieza, cuidado, mantenimiento, rescate y muchas actividades que ayudan día a día a nuestra mascotas a estar mejor 
-                            </p>
-                            <div className="donate-one__btn-box">
-                                <Link href="become-volunteer" className="donate-one__btn thm-btn">Sumate<span><i
-                                            className="icon-arrow-right"></i></span></Link>
-                            </div>
-                        </div>
-                    </div>
+                
                 </div>
             </div>
         </section>
