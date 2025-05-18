@@ -8,13 +8,6 @@ export default function Menu() {
     return (
         <>
             <ul className="main-menu__list">
-             
-                <li>
-                    <Link href="about">Nosotros</Link>
-                </li>
-                <li>
-                    <Link href="contact">Contacto</Link>
-                </li>
             </ul>
         </>
     )
