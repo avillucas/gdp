@@ -43,16 +43,16 @@ export default function Novedades() {
                             <div className="main-slider-content">
                                 <div className="main-slider-content__inner">
                                     <div className="sub-title">
-                                    <h4>Guardianes de patitas</h4>
+                                    <h4>Compartí con nosotros</h4>
                                     </div>
                                     <div className="big-title">
                                         <h2>
-                                            Rescatamos vidas, <br/>construimos hogares
+                                            Soñamos con un mundo <br/>sin animales en la calle
                                         </h2>
                                     </div>
                                     <div className="btn-box">
-                                        <a href="contact" className="thm-btn">
-                                           Contactanos
+                                        <a href="https://wa.me/15551234567?text=Quiero%20sumarme%20como%20voluntario%20" className="thm-btn">
+                                           Sumate
                                             <span>
                                                 <i className="icon-arrow-right"></i>
                                             </span>
@@ -74,16 +74,16 @@ export default function Novedades() {
                             <div className="main-slider-content">
                                 <div className="main-slider-content__inner">
                                     <div className="sub-title">
-                                    <h4>Guardianes de patitas</h4>
+                                    <h4> Viste una mascota perdida</h4>
                                     </div>
                                     <div className="big-title">
                                         <h2>
-                                            Ayudanos con tu <br/>donación
+                                            Nuestra misión es ayudar  <br/>animales en situación de calle
                                         </h2>
                                     </div>
                                     <div className="btn-box">
-                                    <a href="contact" className="thm-btn">
-                                           Contactanos
+                                    <a href="https://wa.me/15551234567?text=Encontr%C3%A9%20una%20mascota%20en%20la%20calle%20y%20creo%20que%20esta%20perdido%2C%20pueden%20ayudarme%20" className="thm-btn">
+                                          Avisanos
                                             <span>
                                                 <i className="icon-arrow-right"></i>
                                             </span>
@@ -109,12 +109,12 @@ export default function Novedades() {
                                     </div>
                                     <div className="big-title">
                                         <h2>
-                                            Buscamos hogares <br/>para nuestros rescatados
+                                            Tu donación salva vidas
                                         </h2>
                                     </div>
                                     <div className="btn-box">
-                                    <a href="contact" className="thm-btn">
-                                           Contactanos
+                                    <a href="#donaciones" className="thm-btn">
+                                           Doná
                                             <span>
                                                 <i className="icon-arrow-right"></i>
                                             </span>

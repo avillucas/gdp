@@ -4,17 +4,12 @@ export default function Causas() {
         <>
         {/*Found One Start */}
         <section className="found-one">
-            <div className="found-one__bg">
-                <div className="found-one__shape-1 float-bob-y">
-                    <img src="assets/images/shapes/found-one-shape-1.png" alt=""/>
-                </div>
-            </div>
             <div className="container">
                 <div className="section-title text-center sec-title-animation animation-style1">
                     <div className="section-title__tagline-box">
-                        <span className="section-title__tagline">Charity Fund</span>
+                        <span className="section-title__tagline">Ayudalos</span>
                     </div>
-                    <h2 className="section-title__title title-animation">Together We Can <br/> <span>Make</span> a Difference
+                    <h2 className="section-title__title title-animation">Juntos podemos <br/> <span>Salvar</span> sus vidas
                     </h2>
                 </div>
                 <div className="row">
@@ -23,32 +18,30 @@ export default function Causas() {
                         <div className="found-one__single">
                             <div className="found-one__img-box">
                                 <div className="found-one__img">
-                                    <img src="assets/images/resources/found-1-1.jpg" alt=""/>
-                                    <img src="assets/images/resources/found-1-1.jpg" alt=""/>
+                                    <img src="assets/images/causas/pirata-1.jpg" alt=""/>
                                 </div>
                             </div>
                             <div className="found-one__content">
-                                <h4 className="found-one__title"><Link href="donation-details">Help For Ecosystem</Link></h4>
-                                <p className="found-one__text">Charity and Donation is a categorys that involves giving
-                                    financial </p>
+                                <h4 className="found-one__title"><Link href="donation-details">Pirata</Link></h4>
+                                <p className="found-one__text">Sufrio una amputación y reacudamos para su silla de Ruedas ajustable para patas traseras</p>
                                 <div className="found-one__goals">
                                     <div className="found-one__raised">
-                                        <p>Raised</p>
-                                        <span>40,802$</span>
+                                        <p>Acumulado</p>
+                                        <span>$40.075</span>
                                     </div>
                                     <div className="found-one__raised">
-                                        <p>Goal</p>
-                                        <span>100,000$</span>
+                                        <p>Objetivo</p>
+                                        <span>$160.302</span>
                                     </div>
                                 </div>
                                 <div className="found-one__progress">
                                     <div className="bar">
-                                        <div className="bar-inner count-bar" data-percent="75%" style={{ width: '75%' }}>
+                                        <div className="bar-inner count-bar" data-percent="25%" style={{ width: '25%' }}>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="found-one__btn-box">
-                                    <Link href="donation-details" className="found-one__btn thm-btn">Donate Now<span><i
+                                    <Link href="donation-details" className="found-one__btn thm-btn">¡Doná Ahora!<span><i
                                                 className="icon-arrow-right"></i></span></Link>
                                 </div>
                             </div>
@@ -60,32 +53,31 @@ export default function Causas() {
                         <div className="found-one__single">
                             <div className="found-one__img-box">
                                 <div className="found-one__img">
-                                    <img src="assets/images/resources/found-1-2.jpg" alt=""/>
-                                    <img src="assets/images/resources/found-1-2.jpg" alt=""/>
+                                    <img src="assets/images/causas/ceniza-1.jpg" alt=""/>
+                                    <img src="assets/images/causas/ceniza-2.jpg" alt=""/>
                                 </div>
                             </div>
                             <div className="found-one__content">
-                                <h4 className="found-one__title"><Link href="donation-details">Water For All</Link></h4>
-                                <p className="found-one__text">Charity and Donation is a categorys that involves giving
-                                    financial </p>
+                                <h4 className="found-one__title"><Link href="donation-details">Ceniza</Link></h4>
+                                <p className="found-one__text">Necesita un marcapasos por un problema congenito del corazón</p>
                                 <div className="found-one__goals">
                                     <div className="found-one__raised">
-                                        <p>Raised</p>
-                                        <span>40,802$</span>
+                                        <p>Acumulado</p>
+                                        <span>$650.002</span>
                                     </div>
                                     <div className="found-one__raised">
-                                        <p>Goal</p>
-                                        <span>100,000$</span>
+                                        <p>Objetivo</p>
+                                        <span>$1.300.030</span>
                                     </div>
                                 </div>
                                 <div className="found-one__progress">
                                     <div className="bar">
-                                        <div className="bar-inner count-bar" data-percent="75%" style={{ width: '75%' }}>
+                                        <div className="bar-inner count-bar" data-percent="50%" style={{ width: '50%' }}>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="found-one__btn-box">
-                                    <Link href="donation-details" className="found-one__btn thm-btn">Donate Now<span><i
+                                    <Link href="donation-details" className="found-one__btn thm-btn">¡Doná Ahora!<span><i
                                                 className="icon-arrow-right"></i></span></Link>
                                 </div>
                             </div>
@@ -97,22 +89,21 @@ export default function Causas() {
                         <div className="found-one__single">
                             <div className="found-one__img-box">
                                 <div className="found-one__img">
-                                    <img src="assets/images/resources/found-1-3.jpg" alt=""/>
-                                    <img src="assets/images/resources/found-1-3.jpg" alt=""/>
+                                    <img src="assets/images/causas/roque-1.jpg" alt=""/>
+                                    <img src="assets/images/causas/roque-2.jpg" alt=""/>
                                 </div>
                             </div>
                             <div className="found-one__content">
-                                <h4 className="found-one__title"><Link href="donation-details">Vaccine Aid Camp</Link></h4>
-                                <p className="found-one__text">Charity and Donation is a categorys that involves giving
-                                    financial </p>
+                                <h4 className="found-one__title"><Link href="donation-details">Roque</Link></h4>
+                                <p className="found-one__text"></p>
                                 <div className="found-one__goals">
                                     <div className="found-one__raised">
-                                        <p>Raised</p>
-                                        <span>40,802$</span>
+                                        <p>Acumulado</p>
+                                        <span>$2.265.003</span>
                                     </div>
                                     <div className="found-one__raised">
-                                        <p>Goal</p>
-                                        <span>100,000$</span>
+                                        <p>Objetivo</p>
+                                        <span>$3.020.000</span>
                                     </div>
                                 </div>
                                 <div className="found-one__progress">
@@ -122,7 +113,7 @@ export default function Causas() {
                                     </div>
                                 </div>
                                 <div className="found-one__btn-box">
-                                    <Link href="donation-details" className="found-one__btn thm-btn">Donate Now<span><i
+                                    <Link href="donation-details" className="found-one__btn thm-btn">¡Doná Ahora!<span><i
                                                 className="icon-arrow-right"></i></span></Link>
                                 </div>
                             </div>
