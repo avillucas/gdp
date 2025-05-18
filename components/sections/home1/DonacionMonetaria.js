@@ -24,7 +24,6 @@ export default function DonacionaMonetaria() {
                             </div>
                             <div className="donate-amount wow fadeInUp" data-wow-delay=".5s">
                                <p>
-                                    <strong>Banco Provincia</strong><br />
                                     <strong>Alias:</strong> PROYECTO-4-PATAS
                                     <strong>CBU:</strong> 0140059501500205063480 <br />
                                     <strong>Asociación Civil Guardianes de patitas</strong> <br />
@@ -34,7 +33,7 @@ export default function DonacionaMonetaria() {
                             </div>
                         </div>
                     </div>
-                    <div className="donation-one__right">
+                    <div className="donation-one__right" >
                         <div className="donation-one__content-box">
                             <div className="section-title-two text-left sec-title-animation animation-style2">
                                 <div className="section-title-two__tagline-box">

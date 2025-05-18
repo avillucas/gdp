@@ -519,6 +519,7 @@
     max-width: 50%;
     width: 100%;
     z-index: 1;
+    bottom:32px;
 }
 
 .donation-one__content-box {
