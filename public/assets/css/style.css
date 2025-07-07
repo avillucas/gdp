@@ -612,12 +612,15 @@ ul {
   flex-wrap: wrap;
 }
 
+.main-menu__login-box a  {
+ color:var(--anity-white);
+ padding:0 0.5em;
+}
 .main-menu__social-box {
   position: relative;
   display: flex;
   align-items: center;
 }
-
 .main-menu__social-title {
   font-size: 16px;
   color: var(--anity-white);

@@ -2,11 +2,11 @@ import Link from "next/link"
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
 import { useContext, useState } from "react";
-import { AuthContext, logout, login } from '../../../context/AuthContext';
+import { AuthContext } from '../../../context/AuthContext';
 
 export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
     const { user } = useState();
-    const { authToken } = useContext(AuthContext);
+    const { authToken, logout } = useContext(AuthContext);
     return (
         <>
 
@@ -33,9 +33,8 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                     </div>
                                 </li>
                             </ul>
-
-                            <div className="main-menu__top-right">
-                                {authToken ?
+                            {authToken ?
+                                <div className="main-menu__top-right">
                                     <div className="main-menu__social-box">
                                         <p className="main-menu__social-title"> {user.fullName}</p>
                                         <div className="main-menu__social">
@@ -43,25 +42,15 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                                 logout(e);
                                             }}>Cerrar Sesión</Link>
                                         </div>
-                                    </div> :
-                                    <div className="main-menu__social-box">
-                                        <p className="main-menu__social-title">Acceder</p>
-                                        <div className="main-menu__social">
-                                         <Link href="/login">Iniciar Sesión</Link>
-                                        </div>
-                                        <p className="main-menu__social-title">Seguinos en las redes:</p>
-                                        <div className="main-menu__social">
-                                            <Link href="#"><i className="icon-facebook"></i></Link>
-                                            <Link href="#"><i className="icon-twitter"></i></Link>
-                                            <Link href="#"><i className="icon-link-in"></i></Link>
-                                            <Link href="#"><i className="icon-instagram"></i></Link>
-                                        </div>
-                                       
                                     </div>
-                                }
-                            </div>
-
-
+                                </div> :
+                                <div className="main-menu__top-right">
+                                    <div className="main-menu__login-box">
+                                        <Link href="/login">Acceder</Link>
+                                        <Link href="/Registrarse">Registrarse</Link>
+                                    </div>
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
