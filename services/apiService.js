@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 import { clearAuth, getToken } from "./authStorageService";
 import { callHideSpinner } from "../context/SpinnerContext";
 
-const http = axios.create({ baseURL: "http://localhost/api/v1/" });
+const http = axios.create({ baseURL: "http://localhost/api/" });
 
 http.interceptors.request.use((config) => {
   const token = getToken();
@@ -64,8 +64,11 @@ function showNetworkError() {
 }
 
 function logoutAndRedirect() {
-  clearAuth();
-  window.location.href = "/login";
+  console.log("Session expired, redirecting to login page.");
+  if (window && window.location && window.location.pathname) {
+    clearAuth();
+    window.location.href = "/login";
+  }
 }
 
 

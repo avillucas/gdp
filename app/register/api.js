@@ -1,5 +1,5 @@
 
-import http from '../../lib/apiService';
+import http from '../../services/apiService';
 
 const register = async (data) => {
   const response = await http.post(`/register`, data);

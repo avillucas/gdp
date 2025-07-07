@@ -2,24 +2,36 @@
 import Link from "next/link"
 import Layout from "@/components/layout/Layout"
 import { ApiService } from "./api";
-import { AuthContext } from '../../context/AuthContext';
-import { useContext, useState } from "react";
-
+import { useSpinner } from "../../context/SpinnerContext";
+import { useState } from "react";
 
 export default function Home() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const { login } = useContext(AuthContext);
+    const [confirmPassword, setConfirmPassword] = useState("");
+    const { show, hide } = useSpinner();
+
 
     async function handleSubmit(event) {
         event.preventDefault();
+        show();
         try {
-            const response = await ApiService.login({ email, password });
-            login(response.token, response.user);
-            window.history.replaceState(null, '', "/dashboard");
+            const response = await ApiService.register({
+                email,
+                password,
+                password_confirmation:confirmPassword,
+                name,
+            });
+            Swal.fire({
+                icon: "success",
+                title: "Exito",
+                text: response.message,
+            });
+            window.history.replaceState(null, '', "/login");
         } catch (error) {
-            console.error("Error on login:", error);
+            hide();
+            console.error("Error on register:", error);
         }
     }
     return (
@@ -46,6 +58,7 @@ export default function Home() {
                                                     onChange={(e) => setName(e.target.value)}
                                                     id="inputName"
                                                     placeholder="Nombre"
+                                                    name="nombre"
                                                     required
                                                 />
                                             </div>
@@ -56,6 +69,7 @@ export default function Home() {
                                                     onChange={(e) => setEmail(e.target.value)}
                                                     id="inputEmail"
                                                     placeholder="Email"
+                                                    name="email"
                                                     required
                                                 />
                                             </div>
@@ -65,7 +79,19 @@ export default function Home() {
                                                     value={password}
                                                     onChange={(e) => setPassword(e.target.value)}
                                                     id="inputPassword"
+                                                    placeholder="Contraseña"
+                                                    name="password"
+                                                    required
+                                                />
+                                            </div>
+                                            <div className="account__form-input-box">
+                                                <input
+                                                    type="password"
+                                                    value={confirmPassword}
+                                                    onChange={(e) => setConfirmPassword(e.target.value)}
+                                                    id="inputPasswordConfirm"
                                                     placeholder="Repetir Contraseña"
+                                                    name="password_confirmation"
                                                     required
                                                 />
                                             </div>

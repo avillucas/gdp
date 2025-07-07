@@ -5,8 +5,8 @@ import { useContext, useState } from "react";
 import { AuthContext } from '../../../context/AuthContext';
 
 export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
-    const { user } = useState();
-    const { authToken, logout } = useContext(AuthContext);
+    const { authToken, logout, user } = useContext(AuthContext);
+    
     return (
         <>
 
@@ -36,11 +36,9 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                             {authToken ?
                                 <div className="main-menu__top-right">
                                     <div className="main-menu__social-box">
-                                        <p className="main-menu__social-title"> {user.fullName}</p>
+                                        <p className="main-menu__social-title"> {user.name}</p>
                                         <div className="main-menu__social">
-                                            <Link onClick={(e) => {
-                                                logout(e);
-                                            }}>Cerrar Sesión</Link>
+                                          cerrar
                                         </div>
                                     </div>
                                 </div> :

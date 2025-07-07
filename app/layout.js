@@ -7,6 +7,7 @@ import "swiper/css/pagination"
 import 'swiper/css/free-mode';
 import { dmSans, libreBaskerville } from '@/lib/font'
 import { AuthProvider } from '../context/AuthContext';
+import { SpinnerProvider } from '../context/SpinnerContext';
 export const metadata = {
     title: 'Guardines de Patitas',
     description: 'Rescatamos vidas, construimos hogares',
