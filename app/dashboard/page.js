@@ -4,9 +4,10 @@ export default function Dashboard() {
 console.log("Dashboard page loaded");
     return (
         <>
-            <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Dashboard">
+            <Layout headerStyle={1} footerStyle={2} >
             {/*Dashboard Page Start*/}
             <section className="dashboard">
+                <Link href="pets" className="btn btn-primary">Go to Pets</Link>
             </section>
             {/*Dashboard Page End*/}
             </Layout>
