@@ -1,12 +1,12 @@
 import Link from "next/link"
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
-import { useState } from "react";
-import { AuthContext, logout } from '../../../context/AuthContext';
+import { useContext, useState } from "react";
+import { AuthContext, logout, login } from '../../../context/AuthContext';
 
 export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
     const { user } = useState();
-    const { authToken, setAuthToken } = useContext(AuthContext);
+    const { authToken } = useContext(AuthContext);
     return (
         <>
 
@@ -37,6 +37,18 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                             <div className="main-menu__top-right">
                                 {authToken ?
                                     <div className="main-menu__social-box">
+                                        <p className="main-menu__social-title"> {user.fullName}</p>
+                                        <div className="main-menu__social">
+                                            <Link onClick={(e) => {
+                                                logout(e);
+                                            }}>Cerrar Sesión</Link>
+                                        </div>
+                                    </div> :
+                                    <div className="main-menu__social-box">
+                                        <p className="main-menu__social-title">Acceder</p>
+                                        <div className="main-menu__social">
+                                         <Link href="/login">Iniciar Sesión</Link>
+                                        </div>
                                         <p className="main-menu__social-title">Seguinos en las redes:</p>
                                         <div className="main-menu__social">
                                             <Link href="#"><i className="icon-facebook"></i></Link>
@@ -44,16 +56,9 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                             <Link href="#"><i className="icon-link-in"></i></Link>
                                             <Link href="#"><i className="icon-instagram"></i></Link>
                                         </div>
-
+                                       
                                     </div>
-                                    : <div className="main-menu__social-box">
-                                        <p className="main-menu__social-title"> {user.fullName}</p>
-                                        <div className="main-menu__social">
-                                            <Link onClick={(e) => {
-                                                logout(e);
-                                            }}>Cerrar Sesión</Link>
-                                        </div>
-                                    </div>}
+                                }
                             </div>
 
 

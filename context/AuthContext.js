@@ -1,4 +1,4 @@
-// context/AuthContext.js
+'use client'
 import React, { createContext, useState, useEffect } from 'react';
 import {
     loadAuth,
@@ -12,23 +12,16 @@ export const AuthProvider = ({ children }) => {
     const [authToken, setAuthToken] = useState(null);
     const [user, setUser] = useState(null);
     useEffect(() => {
-        const { token, user } = loadAuth();
-        setToken(token);
-        setUser(user);
-    }, []);
+    const { token, user } = loadAuth();
+    setAuthToken(token);
+    setUser(user);
+  }, []);
 
     useEffect(() => {
-        if (token && user) {
-            saveAuth({ token, user });
+        if (authToken && user) {
+            saveAuth({ token: authToken, user });
         }
-    }, [token, user]);
-
-    const value = {
-        authToken,
-        setAuthToken,
-        login,
-        logout
-    };
+    }, [authToken, user]);
 
     useEffect(() => {
         if (authToken && user) {
@@ -48,5 +41,5 @@ export const AuthProvider = ({ children }) => {
         clearAuth();
     };
 
-    return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+    return <AuthContext.Provider value={{ authToken, user, login, logout }}>{children}</AuthContext.Provider>;
 };
