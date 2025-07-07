@@ -8,8 +8,11 @@ import Link from "next/link";
 export default function Home() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const { login } = useContext(AuthContext);
+    const { authToken, login } = useContext(AuthContext);
     const { show, isLoading } = useSpinner();
+    if (authToken) {
+        window.location.href = "/dashboard";
+    }
     async function handleSubmit(event) {
         event.preventDefault();
         try {

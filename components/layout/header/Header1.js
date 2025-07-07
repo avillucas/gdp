@@ -6,10 +6,13 @@ import { AuthContext } from '../../../context/AuthContext';
 
 export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
     const { authToken, logout, user } = useContext(AuthContext);
-    
+    const handleLogout = (e) => {
+        logout(e);
+         window.history.replaceState(null, '', "/login");
+    };
+
     return (
         <>
-
             <header className="main-header">
                 <div className="main-menu__top">
                     <div className="container">
@@ -38,7 +41,11 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
                                     <div className="main-menu__social-box">
                                         <p className="main-menu__social-title"> {user.name}</p>
                                         <div className="main-menu__social">
-                                          cerrar
+                                            <form onSubmit={handleLogout} className="d-inline">
+                                                <button type="submit" className="logout-button">
+                                                    Cerrar sesión
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div> :

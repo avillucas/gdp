@@ -3,7 +3,8 @@ import Link from "next/link"
 import Layout from "@/components/layout/Layout"
 import { ApiService } from "./api";
 import { useSpinner } from "../../context/SpinnerContext";
-import { useState } from "react";
+import { AuthContext } from '../../context/AuthContext';
+import {useContext, useState } from "react";
 
 export default function Home() {
     const [name, setName] = useState("");
@@ -11,8 +12,10 @@ export default function Home() {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const { show, hide } = useSpinner();
-
-
+    const { authToken } = useContext(AuthContext);
+    if (authToken) {
+        window.location.href = "/dashboard";
+    }
     async function handleSubmit(event) {
         event.preventDefault();
         show();
@@ -20,7 +23,7 @@ export default function Home() {
             const response = await ApiService.register({
                 email,
                 password,
-                password_confirmation:confirmPassword,
+                password_confirmation: confirmPassword,
                 name,
             });
             Swal.fire({

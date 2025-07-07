@@ -30,12 +30,15 @@ export const AuthProvider = ({ children }) => {
     }, [authToken, user]);
 
     const login = (token, user) => {
+        console.log("Login successful:", token, user);
         setAuthToken(token);
         setUser(user);
     };
 
     const logout = (e) => {
-        e.preventDefault();
+        if (e) {
+            e.preventDefault();
+        }
         setAuthToken(null);
         setUser(null);
         clearAuth();

@@ -627,6 +627,13 @@ ul {
   line-height: 16px;
 }
 
+.main-menu__social button.logout-button {
+      background: none;
+    color: var(--anity-white);
+    border: none;
+}
+
+
 .main-menu__social {
   position: relative;
   display: flex;
