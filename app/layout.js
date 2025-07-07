@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" className={`${dmSans.variable} ${libreBaskerville.variable}`}>
+        <html lang="es" className={` ${libreBaskerville.variable}`}>
             <body>
                   <AuthProvider>{children}</AuthProvider>
             </body>
