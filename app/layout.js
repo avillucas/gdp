@@ -5,6 +5,7 @@ import 'swiper/css'
 import "swiper/css/pagination"
 import 'swiper/css/free-mode';
 import { dmSans, libreBaskerville } from '@/lib/font'
+import { AuthProvider } from '../context/AuthContext';
 export const metadata = {
     title: 'Guardines de Patitas',
     description: 'Rescatamos vidas, construimos hogares',
@@ -13,7 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className={`${dmSans.variable} ${libreBaskerville.variable}`}>
-            <body>{children}</body>
+            <body>
+                  <AuthProvider>{children}</AuthProvider>
+            </body>
         </html>
     )
 }
