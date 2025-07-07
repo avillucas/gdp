@@ -16,7 +16,11 @@ export default function RootLayout({ children }) {
     return (
         <html lang="es" className={` ${libreBaskerville.variable}`}>
             <body>
-                  <AuthProvider>{children}</AuthProvider>
+                <AuthProvider>
+                    <SpinnerProvider>
+                        {children}
+                    </SpinnerProvider>
+                </AuthProvider>
             </body>
         </html>
     )

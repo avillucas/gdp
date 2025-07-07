@@ -1,17 +1,19 @@
 'use client'
 import Layout from "@/components/layout/Layout"
 import { ApiService } from "./api";
-import { AuthContext } from '../../context/AuthContext.js';
+import { AuthContext } from '../../context/AuthContext';
+import { useSpinner } from '../../context/SpinnerContext';
 import { useContext, useState } from "react";
 import Link from "next/link";
 export default function Home() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const { login } = useContext(AuthContext);
-
+    const { show, isLoading } = useSpinner();
     async function handleSubmit(event) {
         event.preventDefault();
         try {
+            if (!isLoading) show();
             const response = await ApiService.login({ email, password });
             login(response.token, response.user);
             window.history.replaceState(null, '', "/dashboard");

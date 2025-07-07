@@ -2,7 +2,7 @@
 import Link from "next/link"
 import Layout from "@/components/layout/Layout"
 import { ApiService } from "./api";
-import { AuthContext } from '../../context/AuthContext.js';
+import { AuthContext } from '../../context/AuthContext';
 import { useContext, useState } from "react";
 
 
