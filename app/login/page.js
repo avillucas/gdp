@@ -18,7 +18,7 @@ export default function Home() {
         try {
             if (!isLoading) show();
             const response = await ApiService.login({ email, password });
-            login(response.token, response.user);
+            login(response.token, response.user, response.abilities);
                 window.location.href = "/dashboard";
         } catch (error) {
             console.error("Error on login:", error);

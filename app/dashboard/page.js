@@ -1,5 +1,6 @@
 'use client'
 import Layout from "@/components/layout/Layout"
+import Adoptables from "@/components/sections/home1/Adoptables"
 export default function Dashboard() {
     return (
         <>
@@ -20,6 +21,11 @@ export default function Dashboard() {
                                     <p>Desde aquí podrás gestionar todas las funcionalidades de la aplicación.</p>
                                     <p>Utiliza el menú superior para navegar entre las diferentes secciones.</p>
                                 </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-12">
+                                <Adoptables />
                             </div>
                         </div>
                     </div>

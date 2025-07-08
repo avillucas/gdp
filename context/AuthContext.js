@@ -11,28 +11,31 @@ export const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
     const [authToken, setAuthToken] = useState(null);
     const [user, setUser] = useState(null);
+    const [abilities, setAbilities] = useState(null);
     useEffect(() => {
-    const { token, user } = loadAuth();
+    const { token, user, abilities } = loadAuth();
     setAuthToken(token);
     setUser(user);
+    setAbilities(abilities);
   }, []);
 
     useEffect(() => {
-        if (authToken && user) {
-            saveAuth({ token: authToken, user });
+        if (authToken && user && abilities) {
+            saveAuth({ token: authToken, user, abilities });
         }
-    }, [authToken, user]);
+    }, [authToken, user, abilities]);
 
     useEffect(() => {
-        if (authToken && user) {
-            saveAuth({ token: authToken, user });
+        if (authToken && user && abilities) {
+            saveAuth({ token: authToken, user, abilities });
         }
-    }, [authToken, user]);
+    }, [authToken, user, abilities]);
 
-    const login = (token, user) => {
-        console.log("Login successful:", token, user);
+    const login = (token, user, abilities) => {
+        console.log("Login successful:", token, user, abilities);
         setAuthToken(token);
         setUser(user);
+        setAbilities(abilities);
     };
 
     const logout = (e) => {
@@ -41,8 +44,9 @@ export const AuthProvider = ({ children }) => {
         }
         setAuthToken(null);
         setUser(null);
+        setAbilities(null);
         clearAuth();
     };
 
-    return <AuthContext.Provider value={{ authToken, user, login, logout }}>{children}</AuthContext.Provider>;
+    return <AuthContext.Provider value={{ authToken, user, abilities, login, logout }}>{children}</AuthContext.Provider>;
 };

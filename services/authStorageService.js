@@ -13,7 +13,7 @@ export function loadAuth() {
   } catch {
     // fallback @todo
   }
-  return { token: null, user: null };
+  return { token: null, user: null, abilities: [] };
 }
 
 export function clearAuth() {
@@ -26,4 +26,8 @@ export function getToken() {
 
 export function getUser() {
   return loadAuth().user;
+}
+
+export function getAbilities() {
+  return loadAuth().abilities;
 }
