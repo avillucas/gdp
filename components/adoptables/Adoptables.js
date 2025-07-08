@@ -6,13 +6,12 @@ export default function Adoptables() {
     const [adoptionOffers, setAdoptionOffers] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [errors, setErrors] = useState(null);
-
-    useEffect(() => {
-        const fetchAdoptionOffers = async () => {
+  const fetchAdoptionOffers = async () => {
             try {
                 setIsLoading(true);
                 const offers = await ApiService.getAdoptionOffers();
-                setAdoptionOffers(offers);
+                console.log(offers);
+                setAdoptionOffers(offers.data);
                 setErrors(null);
             } catch (error) {
                 console.error("Error fetching adoption offers:", error);
@@ -21,6 +20,8 @@ export default function Adoptables() {
                 setIsLoading(false);
             }
         };
+    useEffect(() => {
+      
 
         fetchAdoptionOffers();
     }, []);
@@ -44,7 +45,7 @@ export default function Adoptables() {
                                     <div className="event-one__single">
                                         <div className="event-one__img-box">
                                             <div className="event-one__img">
-                                                <img src="assets/images/adopcion/beto-1.jpg" alt={offer.pet?.name || 'Mascota'} />
+                                                <img src={offer.pet?.photo_url || 'assets/images/adopcion/beto-1.jpg'} alt={offer.pet?.name || 'Mascota'} />
                                             </div>
                                             <div className="event-one__date">
                                                 <p>{offer.title}</p>
@@ -56,7 +57,7 @@ export default function Adoptables() {
                                                     {offer.pet?.name || 'Mascota sin nombre'}
                                                 </Link>
                                             </h4>
-                                            <p className="event-one__text">{offer.description}</p>
+                                            <p className="event-one__text">{offer.headline}</p>
                                             <div className="event-one__btn-box">
                                                 <Link href={`/adoption-request/${offer.id}`} className="event-one__btn thm-btn">
                                                     Adoptame<span><i className="icon-arrow-right"></i></span>
