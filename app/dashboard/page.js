@@ -1,6 +1,6 @@
 'use client'
 import Layout from "@/components/layout/Layout"
-import Adoptables from "@/components/sections/home1/Adoptables"
+import Adoptables from "@/components/adoptables/Adoptables"
 import { useContext } from "react";
 import { AuthContext } from '../../context/AuthContext';
 export default function Dashboard() {
