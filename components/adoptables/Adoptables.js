@@ -29,7 +29,7 @@ export default function Adoptables() {
         <>
             {/**Event One Start */}
 
-            {!isLoading && !errors && Array.isArray(adoptionOffers) && adoptionOffers.length === 0 && (
+            {!isLoading && !errors && Array.isArray(adoptionOffers) && adoptionOffers.length !== 0 && (
                 <section className="event-one">
                     <div className="container">
                         <div className="section-title text-center sec-title-animation animation-style1">
