@@ -28,7 +28,7 @@ export default function Home() {
                         <th>Mascota</th>
                         <th>Usuario</th>
                         <th>Estado</th>
-                        <th>fecha solicitud</th>
+                        <th>Fecha actualización</th>
                         <th>Acciones</th>
                       </tr>
                     </thead>
@@ -43,7 +43,7 @@ export default function Home() {
                             <td>{adoptionRequest.pet.name}</td>
                             <td>{adoptionRequest.user.name}</td>
                             <td>{adoptionRequest.status}</td>
-                            <td>{adoptionRequest.createdAt}</td>
+                            <td>{adoptionRequest.updated_at.substring(0, 10)}</td>
                             <td>
                               <button
                                 className="thm-btn become-volinteer__btn"
@@ -56,7 +56,7 @@ export default function Home() {
                               <button
                                 className="thm-btn become-volinteer__btn"
                                 onClick={(e) => {
-                                  handleReject(e, adoptionRequest.pet.id);
+                                  handleReject(e, adoptionRequest.id);
                                 }}
                               >
                                 Rechazar

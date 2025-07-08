@@ -13,8 +13,10 @@ const AproveAdoptionRequest = async (id) => {
   return response.data;
 };
 
-const RejectAdoptionRequest = async (id) => {
-  const response = await http.post(`/adoption-requests/${id}/reject`);
+const RejectAdoptionRequest = async (id, reason) => {
+  const response = await http.post(`/adoption-requests/${id}/reject`, {
+    reject_reason: reason,
+  });
   return response.data;
 };
 
