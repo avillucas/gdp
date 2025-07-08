@@ -12,7 +12,7 @@ export default function Footer1() {
                             <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div className="footer-widget__about">
                                     <div className="footer-widget__about-logo">
-                                        <Link href="/"><img src="assets/images/resources/logo-2.png" alt=""/></Link>
+                                        <Link href="/"><img src="/assets/images/resources/logo-2.png" alt=""/></Link>
                                     </div>
                                     <p className="footer-widget__about-text">Rescatamos vidas, construimos hogares</p>
                                     <div className="site-footer__social">

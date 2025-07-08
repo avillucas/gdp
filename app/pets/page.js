@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Layout headerStyle={2} footerStyle={2} >
         {/*Account Start*/}
-        <section className="become-volinteer">
+        <section >
           {!isLoading && !errors && (
             <div className="container">
               <div className="row">
@@ -56,14 +56,6 @@ export default function Home() {
                             <td>{pet.age}</td>
                             <td>{pet.type}</td>
                             <td>
-                              <button
-                                className="thm-btn become-volinteer__btn"
-                                onClick={(e) => {
-                                  handleDetail(e, pet.id);
-                                }}
-                              >
-                                Ver
-                              </button>
                               <button
                                 className="thm-btn become-volinteer__btn"
                                 onClick={(e) => {

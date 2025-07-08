@@ -1,12 +1,10 @@
 import { ApiService } from "./api";
-import { useSpinner } from '../../context/SpinnerContext';
-import { AlertService } from "../../services/alertService";
+import { useSpinner } from '../../../context/SpinnerContext';
+import { AlertService } from "../../../services/alertService";
 import { useState, useEffect, useRef } from "react";
-export default function useScreenHooks() {
+export default function useScreenHooks(petId) {
   const formRef = useRef(null);
   const { show, hide, isLoading } = useSpinner();
-  const { id } = useParams();
-  const petId = Number(id);
   const [tipo, setTipo] = useState("");
   const [raza, setRaza] = useState("");
   const [nombre, setNombre] = useState("");
@@ -43,43 +41,40 @@ export default function useScreenHooks() {
       });
       hide();
       const alertResponse = await AlertService.showSuccess(
-        "La mascota ha sido creada correctamente"
+        "La mascota ha sido editada correctamente"
       );
       if (alertResponse.value) window.location.href = "/pets";
     } catch (error) {
       console.log("Error fetching data:", error);
     }
   }
-
-  useEffect(() => {
-    document.title = "Crear Mascotas";
-    const fetchData = async () => {
-      try {
-        if (petId) {
-          if (!isLoading) show();
-          const petData = await ApiService.getPetById(petId);
-          if (petData.data) {
-            setTipo(petData.data.type);
-            setRaza(petData.data.breed);
-            setNombre(petData.data.name);
-            setEdad(petData.data.age);
-            setTamanio(petData.data.size);
-          }
-          hide();
+  async function fetchData() {
+    try {
+      if (petId) {
+        if (!isLoading) show();
+        const petData = await ApiService.getPetById(petId);
+        if (petData.data) {
+          setTipo(petData.data.type);
+          setRaza(petData.data.breed);
+          setNombre(petData.data.name);
+          setEdad(petData.data.age);
+          setTamanio(petData.data.size);
         }
-      } catch (error) {
-        console.log("Error fetching data:", error);
         hide();
       }
-    };
-
+    } catch (error) {
+      console.log("Error fetching data:", error);
+      hide();
+    }
+  };
+  useEffect(() => {
+    document.title = "Editar Mascotas";
     if (petId) {
       fetchData();
     }
-  }, [petId, hide, show, isLoading]);
+  }, []);
 
   return {
-    petId,
     formRef,
     raza,
     setRaza,

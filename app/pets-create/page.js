@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <Layout headerStyle={2} footerStyle={2} >
         {/*Account Start*/}
-        <section className="account">
+        <section >
           {!isLoading && !errors && (
             <div className="container">
               <div className="row">
@@ -42,7 +42,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
               <div className="become-volinteer__bottom">
                 <div className="become-volinteer__bottom-left"></div>
                 <form ref={formRef} onSubmit={handleSubmit} className="contact-form-validated become-volinteer__form" >

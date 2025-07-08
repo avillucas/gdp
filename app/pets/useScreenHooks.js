@@ -9,11 +9,11 @@ export default function useScreenHooks() {
     const { show, hide, isLoading } = useSpinner();
     const handleDetail = (e, petId) => {
         e.preventDefault();
-        window.location.href = `/pets/${petId}`;
+        window.location.href = `/pets-view/${petId}`;
     };
     const handleEdit = (e, petId) => {
         e.preventDefault();
-        window.location.href = `/pets/edit/${petId}`;
+        window.location.href = `/pets-edit/${petId}`;
     };
     const handleDelete = (e, petId) => {
         e.preventDefault();
