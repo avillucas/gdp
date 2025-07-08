@@ -22,7 +22,7 @@ export default function useScreenHooks() {
             if (result.isConfirmed) {
                 try {
                     if (!isLoading) show();
-                    await ApiService.ApproveAdoptionRequest(adoptionRequestId);
+                    await ApiService.AproveAdoptionRequest(adoptionRequestId);
                     hide();
                     const alertResponse = await AlertService.showSuccess(
                         "La solicitud de adopción ha sido aprobada correctamente"

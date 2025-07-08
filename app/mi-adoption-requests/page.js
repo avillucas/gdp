@@ -28,7 +28,7 @@ export default function Home() {
                                                 <th>Mascota</th>
                                                 <th>Estado</th>
                                                 <th>Fecha Actualización</th>
-                                                <th>Motivo de rechazo</th>
+                                                <th>Información</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -42,7 +42,9 @@ export default function Home() {
                                                         <td>{adoptionRequest.pet.name}</td>
                                                         <td>{adoptionRequest.status}</td>
                                                         <td>{adoptionRequest.updated_at.substring(0, 10)}</td>
-                                                        <td>{adoptionRequest.reject_reason}</td>
+                                                        {adoptionRequest.status == 'approved' ? <td><span>Un administrador contactara por telefono para coordinar el retiro </span></td> : ''}
+                                                        {adoptionRequest.status == 'rejected' ? (adoptionRequest.reject_reason ?<td><span>Motivo de rechazo: {adoptionRequest.reject_reason}</span></td> :<td><span>No se proporcionó un motivo de rechazo</span></td>) : ''}
+                                                        {adoptionRequest.status == 'pending' ? <td><span>Esta siendo revisada por un administrador</span></td> : ''}
                                                     </tr>
                                                 ))
                                             ) : (

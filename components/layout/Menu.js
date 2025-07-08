@@ -11,13 +11,13 @@ export default function Menu() {
                 abilities == 'admin' ? (
                     <ul className="main-menu__list">
                         <li> <Link href="dashboard">Portada</Link></li>
-                        <li> <Link href="pets">Mascotas</Link></li>
-                        <li> <Link href="adoption-requests">Evaluar Solicitudes </Link></li>
-                        <li> <Link href="adoption-offer">Ofertas de adopción </Link></li>
+                        <li> <Link href="/pets">Mascotas</Link></li>
+                        <li> <Link href="/adoption-requests">Evaluar Solicitudes </Link></li>
+                        <li> <Link href="/adoption-offer">Ofertas de adopción </Link></li>
                     </ul>) : (
                     <ul className="main-menu__list">
-                        <li> <Link href="dashboard">Portada</Link></li>
-                        <li> <Link href="mi-adoption-requests">Solicitudes adopción</Link></li>
+                        <li> <Link href="/dashboard">Portada</Link></li>
+                        <li> <Link href="/mi-adoption-requests">Solicitudes adopción</Link></li>
                     </ul>) :
                 <></>
             }
