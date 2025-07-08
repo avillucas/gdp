@@ -49,7 +49,7 @@ export default function Home() {
                     <tbody>
                       {Array.isArray(offers) && offers.length === 0 ? (
                         <tr>
-                          <td colSpan={4}>No hay ofertas disponibles.</td>
+                          <td colSpan={5}>No hay ofertas disponibles.</td>
                         </tr>
                       ) : Array.isArray(offers) ? (
                         offers.map((offer) => (
@@ -63,7 +63,7 @@ export default function Home() {
                                 <button
                                   className="thm-btn become-volinteer__btn"
                                   onClick={(e) => {
-                                    handlePublish(e, offer.id);
+                                    handdlePublish(e, offer.id);
                                   }}
                                 >
                                   Publicar
@@ -99,7 +99,7 @@ export default function Home() {
                         ))
                       ) : (
                         <tr>
-                          <td colSpan={4}>No hay ofertas  disponibles.</td>
+                          <td colSpan={5}>No hay ofertas  disponibles.</td>
                         </tr>
                       )}
                     </tbody>

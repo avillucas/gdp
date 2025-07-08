@@ -57,7 +57,7 @@ export default function useScreenHooks() {
                     const alertResponse = await AlertService.showSuccess(
                         "La oferta ha sido publicada correctamente"
                     );
-                    if (alertResponse.value) window.location.href = "/adoption-offers";
+                    if (alertResponse.value) window.location.href = "/adoption-offer";
                 } catch (error) {
                     console.log("Error fetching data:", error);
                 }
@@ -84,7 +84,7 @@ export default function useScreenHooks() {
                     const alertResponse = await AlertService.showSuccess(
                         "La oferta ha sido enviada a borrador correctamente"
                     );
-                    if (alertResponse.value) window.location.href = "/adoption-offers";
+                    if (alertResponse.value) window.location.href = "/adoption-offer";
                 } catch (error) {
                     console.log("Error fetching data:", error);
                 }
