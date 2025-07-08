@@ -366,7 +366,9 @@
 }
 
 .become-volinteer__input-box input[type="text"],
-.become-volinteer__input-box input[type="email"] {
+.become-volinteer__input-box input[type="email"],
+.become-volinteer__input-box input[type="number"],
+.become-volinteer__input-box select {
     height: 60px;
     width: 100%;
     background-color: transparent;
@@ -380,6 +382,9 @@
     font-weight: 400;
     border-radius: var(--anity-bdr-radius);
     line-height: 60px;
+}
+.become-volinteer__input-box select {
+    line-height: normal;
 }
 
 .become-volinteer__input-box textarea {

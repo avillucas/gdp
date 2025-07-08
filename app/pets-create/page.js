@@ -1,8 +1,9 @@
 'use client'
 import Layout from "@/components/layout/Layout"
 import useScreenHooks from "./useScreenHooks";
+import Link from "next/link";
 export default function Home() {
- 
+
   const {
     isLoading,
     errors,
@@ -27,110 +28,117 @@ export default function Home() {
         {/*Account Start*/}
         <section className="account">
           {!isLoading && !errors && (
-            <div className="row">
-              <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div className="container">
+              <div className="row">
                 <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                   <h1 className="h2">Agregar mascota</h1>
                   <div className="btn-toolbar mb-2 mb-md-0">
-                    <a
+                    <Link
                       href="/pets"
-                      type="button"
-                      className="btn btn-sm btn-outline-secondary"
+                      className="thm-btn become-volinteer__btn"
                     >
                       Volver al listado
-                    </a>
+                    </Link>
                   </div>
                 </div>
-                <form ref={formRef} onSubmit={handleSubmit}>
-                  <div className="mb-3">
-                    <label htmlFor="petName" className="form-label">
-                      Nombre
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      className="form-control"
-                      id="name"
-                      aria-describedby="petNameValue"
-                      value={nombre ?? ""}
-                      onChange={(e) => setNombre(e.target.value)}
-                    />
-                    <div id="petNameValue" className="form-text">
-                      Definir el nombre de la mascota
-                    </div>
-                  </div>
-                  <div className="mb-3">
-                    <label htmlFor="petAge" className="form-label">
-                      Edad
-                    </label>
-                    <input
-                      type="number"
-                      name="age"
-                      min="1"
-                      max="150"
-                      className="form-control"
-                      id="petAge"
-                      aria-describedby="petAgeValue"
-                      value={edad ?? ""}
-                      onChange={(e) => setEdad(e.target.value)}
-                    />
-                    <div id="petAgeValue" className="form-text">
-                      Definir la edad en meses
-                    </div>
-                  </div>
-                  <div className="mb-3">
-                    <select
-                      className="form-select"
-                      name="size"
-                      aria-label="mediano"
-                      value={tamanio ?? ""}
-                      onChange={(e) => setTamanio(e.target.value)}
-                    >
-                      <option value="">Seleccione el tamaño</option>
-                      {tamanios.map((tamanio) => (
-                        <option key={tamanio.value} value={tamanio.value}>
-                          {tamanio.name}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                  <div className="mb-3">
-                    <label htmlFor="petRaza" className="form-label">
-                      Raza
-                    </label>
-                    <input
-                      type="text"
-                      name="breed"
-                      className="form-control"
-                      id="petRaza"
-                      aria-describedby="petRazaValue"
-                      value={raza ?? ""}
-                      onChange={(e) => setRaza(e.target.value)}
-                    />
-                    <div id="petRazaValue" className="form-text">
-                      Definir la raza de la mascota
-                    </div>
-                  </div>
+              </div>
 
-                  <div className="mb-3">
-                    <select
-                      className="form-select"
-                      aria-label="Tipo"
-                      name="type"
-                      value={tipo ?? ""}
-                      onChange={(e) => setTipo(e.target.value)}
-                    >
-                      <option>Tipo</option>
-                      {tipos.map((tipo) => (
-                        <option key={tipo.value} value={tipo.value}>
-                          {tipo.name}
-                        </option>
-                      ))}
-                    </select>
+              <div className="become-volinteer__bottom">
+                <div className="become-volinteer__bottom-left"></div>
+                <form ref={formRef} onSubmit={handleSubmit} className="contact-form-validated become-volinteer__form" >
+                  <div className="row">
+                    <div className="col-xl-6 col-lg-6">
+                      <div className="col-xl-12">
+                        <div className="become-volinteer__input-box">
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="Nombre"
+                            className="form-control"
+                            id="name"
+                            aria-describedby="petNameValue"
+                            value={nombre ?? ""}
+                            onChange={(e) => setNombre(e.target.value)}
+                          />
+                        </div>
+                      </div>
+                      <div className="col-xl-12">
+                        <div className="become-volinteer__input-box">
+                          <input
+                            type="number"
+                            name="age"
+                            min="1"
+                            max="150"
+                            className="form-control"
+                            placeholder="Edad en meses"
+                            id="petAge"
+                            aria-describedby="petAgeValue"
+                            value={edad ?? ""}
+                            onChange={(e) => setEdad(e.target.value)}
+                          />
+                        </div>
+                      </div>
+                      <div className="col-xl-12">
+                        <div className="become-volinteer__input-box">
+                          <select
+                            className="form-select"
+                            name="size"
+                            aria-label="mediano"
+                            value={tamanio ?? ""}
+                            onChange={(e) => setTamanio(e.target.value)}
+                          >
+                            <option value="">Seleccione el tamaño</option>
+                            {tamanios.map((tamanio) => (
+                              <option key={tamanio.value} value={tamanio.value}>
+                                {tamanio.name}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xl-6 col-lg-6">
+                      <div className="col-xl-12">
+                        <div className="become-volinteer__input-box">
+                          <input
+                            type="text"
+                            name="breed"
+                            placeholder="Raza"
+                            className="form-control"
+                            id="petRaza"
+                            aria-describedby="petRazaValue"
+                            value={raza ?? ""}
+                            onChange={(e) => setRaza(e.target.value)}
+                          />
+                        </div>
+                      </div>
+                      <div className="col-xl-12">
+                        <div className="become-volinteer__input-box">
+                          <select
+                            className="form-select"
+                            aria-label="Tipo"
+                            name="type"
+                            value={tipo ?? ""}
+                            onChange={(e) => setTipo(e.target.value)}
+                          >
+                            <option>Tipo</option>
+                            {tipos.map((tipo) => (
+                              <option key={tipo.value} value={tipo.value}>
+                                {tipo.name}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xl-12">
+                      <div className="become-volinteer__btn-box">
+                        <button type="submit" className="thm-btn become-volinteer__btn">Crear Mascota<span><i className="icon-arrow-right"></i></span></button>
+                      </div>
+                    </div>
                   </div>
-                  <input type="submit" value="Crear" />
                 </form>
-              </main>
+              </div>
             </div>
           )}
         </section>
