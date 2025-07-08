@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <Layout headerStyle={2} footerStyle={2} >
+      <Layout headerStyle={2}  >
         {/*Account Start*/}
         <section >
           {!isLoading && !errors && (

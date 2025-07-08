@@ -8,7 +8,8 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu }) {
     const { authToken, logout, user } = useContext(AuthContext);
     const handleLogout = (e) => {
         logout(e);
-         window.history.replaceState(null, '', "/login");
+        //   window.history.replaceState(null, '', "/login");
+        window.location.href = "/login";
     };
 
     return (

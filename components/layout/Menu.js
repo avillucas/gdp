@@ -10,7 +10,8 @@ export default function Menu() {
         <>
             {authToken ?
                 <ul className="main-menu__list"> 
-                    <Link href="pets">Mascotas</Link>
+                   <li> <Link href="dashboard">Portada</Link></li>
+                   <li> <Link href="pets">Mascotas</Link></li>
                 </ul> :
                 <ul className="main-menu__list"></ul>
                 }

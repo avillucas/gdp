@@ -19,14 +19,14 @@ export default function Home() {
             if (!isLoading) show();
             const response = await ApiService.login({ email, password });
             login(response.token, response.user);
-            window.history.replaceState(null, '', "/dashboard");
+                window.location.href = "/dashboard";
         } catch (error) {
             console.error("Error on login:", error);
         }
     }
     return (
         <>
-            <Layout headerStyle={2} footerStyle={2} breadcrumbTitle="Cuenta">
+            <Layout headerStyle={2} footerStyle={2} >
                 {/*Account Start*/}
                 <section className="account">
                     <div className="container">

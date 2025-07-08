@@ -24,7 +24,7 @@ export default function Home() {
   } = useScreenHooks();
   return (
     <>
-      <Layout headerStyle={2} footerStyle={2} >
+      <Layout headerStyle={2}  >
         {/*Account Start*/}
         <section >
           {!isLoading && !errors && (

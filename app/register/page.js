@@ -31,7 +31,7 @@ export default function Home() {
                 title: "Exito",
                 text: response.message,
             });
-            window.history.replaceState(null, '', "/login");
+            window.location.href = "/login";
         } catch (error) {
             hide();
             console.error("Error on register:", error);
@@ -39,7 +39,7 @@ export default function Home() {
     }
     return (
         <>
-            <Layout headerStyle={2} footerStyle={2} breadcrumbTitle="Cuenta">
+            <Layout headerStyle={2} footerStyle={2} >
                 {/*Account Start*/}
                 <section className="account">
                     <div className="container">

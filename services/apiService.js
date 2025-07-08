@@ -67,7 +67,8 @@ function logoutAndRedirect() {
   console.log("Session expired, redirecting to login page.");
   if (window && window.location && window.location.pathname) {
     clearAuth();
-    window.history.replaceState(null, '', "/login");
+   // window.history.replaceState(null, '', "/login");
+    window.location.href = "/login";
   }
 }
 
