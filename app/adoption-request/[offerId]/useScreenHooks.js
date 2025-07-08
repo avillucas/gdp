@@ -26,7 +26,7 @@ export default function useScreenHooks(offerId) {
                 phone,
                 address,
                 application,
-                pet_id: offer.pet.id,
+                petd: offer.pet.id,
             });
             hide();
             const alertResponse = await AlertService.showSuccess(
