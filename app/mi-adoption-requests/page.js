@@ -27,8 +27,8 @@ export default function Home() {
                                             <tr>
                                                 <th>Mascota</th>
                                                 <th>Estado</th>
-                                                <th>Fecha solicitud</th>
-                                                <th>Motivo</th>
+                                                <th>Fecha Actualización</th>
+                                                <th>Motivo de rechazo</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -41,26 +41,8 @@ export default function Home() {
                                                     <tr key={adoptionRequest.id}>
                                                         <td>{adoptionRequest.pet.name}</td>
                                                         <td>{adoptionRequest.status}</td>
-                                                        <td>{adoptionRequest.createdAt}</td>
-                                                        <td>{adoptionRequest.reason}</td>
-                                                        <td>
-                                                            <button
-                                                                className="thm-btn become-volinteer__btn"
-                                                                onClick={(e) => {
-                                                                    handleApprove(e, adoptionRequest.id);
-                                                                }}
-                                                            >
-                                                                Aprobar
-                                                            </button>
-                                                            <button
-                                                                className="thm-btn become-volinteer__btn"
-                                                                onClick={(e) => {
-                                                                    handleReject(e, adoptionRequest.pet.id);
-                                                                }}
-                                                            >
-                                                                Rechazar
-                                                            </button>
-                                                        </td>
+                                                        <td>{adoptionRequest.updated_at.substring(0, 10)}</td>
+                                                        <td>{adoptionRequest.reject_reason}</td>
                                                     </tr>
                                                 ))
                                             ) : (

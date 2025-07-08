@@ -2,7 +2,7 @@
 import http from '../../../services/apiService';
 
 const createAdoptionRequestMine = async (requestData) => {
-  if(!requestData || !requestData.address || !requestData.phone || !requestData.application || !requestData.petId) {
+  if(!requestData || !requestData.address || !requestData.phone || !requestData.application || !requestData.pet_id) {
     throw new Error("Invalid pet data provided");
   }
   console.log("Creating adoption request with data:", requestData);

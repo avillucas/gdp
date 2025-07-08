@@ -23,16 +23,16 @@ export default function useScreenHooks(offerId) {
         try {
             if (!isLoading) show();
             await ApiService.createAdoptionRequestMine({
-                phone: telefono,
-                address: direccion,
-                application: pedido,
-                petId: offer.pet.id,
+                phone,
+                address,
+                application,
+                pet_id: offer.pet.id,
             });
             hide();
             const alertResponse = await AlertService.showSuccess(
                 "La solicitud de adopción ha sido creada correctamente"
             );
-            if (alertResponse.value) window.location.href = "/pets";
+            if (alertResponse.value) window.location.href = "/mi-adoption-requests";
         } catch (error) {
             console.log("Error fetching data:", error);
         }
@@ -42,9 +42,8 @@ export default function useScreenHooks(offerId) {
     try {
       if (offerId) {
         if (!isLoading) show();
-        const offerData = await ApiService.getAdoptionOffer(offerId);
-        setOffer(offerData);
-        console.log("Offer data fetched:", offerData);
+        const offerData = await ApiService.getOfferById(offerId);
+        setOffer(offerData.data);
         hide();
       }
     } catch (error) {
@@ -57,7 +56,6 @@ export default function useScreenHooks(offerId) {
 
     useEffect(() => {
         document.title = "Solicitud de adopción";
-        console.log("Fetching all adoptions...", adoptionRequests);
         fetchData();
     }, []);
 
@@ -71,7 +69,7 @@ export default function useScreenHooks(offerId) {
         application,    
         setApplication,
         offerId,
-        adoptionRequests,
+
         isLoading,
         errors,
         handleSubmit
