@@ -28,24 +28,9 @@ export default function Adoptables() {
     return (
         <>
             {/**Event One Start */}
-            <section className="event-one">
-                {isLoading && (
-                    <div className="container">
-                        <div className="text-center">
-                            <p>Cargando mascotas...</p>
-                        </div>
-                    </div>
-                )}
 
-                {errors && (
-                    <div className="container">
-                        <div className="text-center">
-                            <p>Error al cargar las mascotas: {errors}</p>
-                        </div>
-                    </div>
-                )}
-
-                {!isLoading && !errors && (
+            {!isLoading && !errors && Array.isArray(adoptionOffers) && adoptionOffers.length === 0 && (
+                <section className="event-one">
                     <div className="container">
                         <div className="section-title text-center sec-title-animation animation-style1">
                             <div className="section-title__tagline-box">
@@ -54,43 +39,38 @@ export default function Adoptables() {
                             <h2 className="section-title__title title-animation">Adoptá a una de nuestros  <br />amigos caninos</h2>
                         </div>
                         <div className="row">
-                            {Array.isArray(adoptionOffers) && adoptionOffers.length === 0 ? (
-                                <div className="col-12 text-center">
-                                    <p>No hay mascotas disponibles para adopción en este momento.</p>
-                                </div>
-                            ) : (
-                                Array.isArray(adoptionOffers) && adoptionOffers.map((offer) => (
-                                    <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms" key={offer.id}>
-                                        <div className="event-one__single">
-                                            <div className="event-one__img-box">
-                                                <div className="event-one__img">
-                                                    <img src="assets/images/adopcion/beto-1.jpg" alt={offer.pet?.name || 'Mascota'} />
-                                                </div>
-                                                <div className="event-one__date">
-                                                    <p>{offer.title}</p>
-                                                </div>
+                            {adoptionOffers.map((offer) => (
+                                <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms" key={offer.id}>
+                                    <div className="event-one__single">
+                                        <div className="event-one__img-box">
+                                            <div className="event-one__img">
+                                                <img src="assets/images/adopcion/beto-1.jpg" alt={offer.pet?.name || 'Mascota'} />
                                             </div>
-                                            <div className="event-one__content">
-                                                <h4 className="event-one__title">
-                                                    <Link href={`/adoption-request/${offer.id}`}>
-                                                        {offer.pet?.name || 'Mascota sin nombre'}
-                                                    </Link>
-                                                </h4>
-                                                <p className="event-one__text">{offer.description}</p>
-                                                <div className="event-one__btn-box">
-                                                    <Link href={`/adoption-request/${offer.id}`} className="event-one__btn thm-btn">
-                                                        Adoptame<span><i className="icon-arrow-right"></i></span>
-                                                    </Link>
-                                                </div>
+                                            <div className="event-one__date">
+                                                <p>{offer.title}</p>
+                                            </div>
+                                        </div>
+                                        <div className="event-one__content">
+                                            <h4 className="event-one__title">
+                                                <Link href={`/adoption-request/${offer.id}`}>
+                                                    {offer.pet?.name || 'Mascota sin nombre'}
+                                                </Link>
+                                            </h4>
+                                            <p className="event-one__text">{offer.description}</p>
+                                            <div className="event-one__btn-box">
+                                                <Link href={`/adoption-request/${offer.id}`} className="event-one__btn thm-btn">
+                                                    Adoptame<span><i className="icon-arrow-right"></i></span>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
-                                ))
-                            )}
+                                </div>
+                            ))}
                         </div>
                     </div>
-                )}
-            </section>
+                </section>
+            )}
+
             {/**Event One End */}
         </>
     )

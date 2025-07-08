@@ -16,7 +16,7 @@ const updatePet = async (petData) => {
     throw new Error("Invalid pet data provided");
   }
   console.log("Updating pet with data:", petData);
-  const response = await http.patch(`/pets/${petData.id}`, petData);
+  const response = await http.post(`/pets/${petData.id}`, petData);
   return response.data;
 };
 export const ApiService = {
