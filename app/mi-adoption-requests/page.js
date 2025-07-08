@@ -27,7 +27,7 @@ export default function Home() {
                                             <tr>
                                                 <th>Mascota</th>
                                                 <th>Estado</th>
-                                                <th>fecha solicitud</th>
+                                                <th>Fecha solicitud</th>
                                                 <th>Motivo</th>
                                             </tr>
                                         </thead>
