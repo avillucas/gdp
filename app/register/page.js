@@ -1,5 +1,6 @@
 'use client'
 import Link from "next/link"
+import Swal from "sweetalert2";
 import Layout from "@/components/layout/Layout"
 import { ApiService } from "./api";
 import { useSpinner } from "../../context/SpinnerContext";

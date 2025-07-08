@@ -1,3 +1,15 @@
+# USUARIOS 
+
+## administrador 
+avillucas@gmail.com
+avillucas 
+avillucas
+## Usuario 
+avillucas+usuario@gmail.com
+usuario  
+usuario123
+
+
 ```bash
 docker run -it --rm \
 -v /$(pwd):/app \

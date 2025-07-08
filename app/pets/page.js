@@ -8,7 +8,6 @@ export default function Home() {
     errors,
     handleDelete,
     handleCreate,
-    handleDetail,
     handleEdit,
   } = useScreenHooks();
 

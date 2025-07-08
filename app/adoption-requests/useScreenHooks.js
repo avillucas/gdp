@@ -4,7 +4,7 @@ import { AlertService } from "../../services/alertService";
 import { useSpinner } from '../../context/SpinnerContext';
 import { useState, useEffect, useCallback  } from "react";
 export default function useScreenHooks() {
-    const [pets, setPets] = useState([]);
+    const [adoptionRequests, setAdoptionRequests] = useState([]);
     const [errors] = useState(null);
     const { show, hide, isLoading } = useSpinner();
  
@@ -70,23 +70,23 @@ export default function useScreenHooks() {
     try {
       if (!isLoading) show();
       const response = await ApiService.getAll();
-      setPets(response.data);
+      setAdoptionRequests(response.data);
       hide();
     } catch (error) {
-      console.error("Error fetching pets:", error);
+      console.error("Error fetching adoption requests:", error);
       hide();
     }
   }, [isLoading, show, hide]);
 
   
   useEffect(() => {
-    document.title = "Lista de Mascotas";
-    console.log("Fetching all pets...",pets);
+    document.title = "Lista de Solicitudes de Adopción";
+    console.log("Fetching all adoption requests...", adoptionRequests);
     fetchAll();
   }, []);
 
     return {
-        pets,
+        adoptionRequests,
         isLoading,
         errors,
         handleReject,

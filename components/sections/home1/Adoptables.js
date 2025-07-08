@@ -26,10 +26,10 @@ export default function Adoptables() {
                                 </div>
                             </div>
                             <div className="event-one__content">
-                                <h4 className="event-one__title"><Link href="https://wa.me/15551234567?text=Quiero%20adoptar%20a%20Beto">Beto</Link></h4>
+                                <h4 className="event-one__title"><Link href="/adoption-request">Beto</Link></h4>
                                 <p className="event-one__text">Es un cocker spaniel rescatado de las vias del tren, es super amistodo, esta educado</p>
                                 <div className="event-one__btn-box">
-                                    <Link href="https://wa.me/15551234567?text=Quiero%20adoptar%20a%20Beto" className="event-one__btn thm-btn">Adoptame<span><i
+                                    <Link href="/adoption-request" className="event-one__btn thm-btn">Adoptame<span><i
                                                 className="icon-arrow-right"></i></span></Link>
                                 </div>
                             </div>

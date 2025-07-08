@@ -6,7 +6,6 @@ export default function Home() {
     adoptionRequests,
     isLoading,
     errors,
-    handleCreate,
     handleReject,
     handleApprove
   } = useScreenHooks();
