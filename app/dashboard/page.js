@@ -1,5 +1,6 @@
 'use client'
 import Layout from "@/components/layout/Layout"
+import Link from "next/link";
 export default function Dashboard() {
 console.log("Dashboard page loaded");
     return (
@@ -7,7 +8,7 @@ console.log("Dashboard page loaded");
             <Layout headerStyle={1} footerStyle={2} >
             {/*Dashboard Page Start*/}
             <section className="dashboard">
-                <Link href="pets" className="btn btn-primary">Go to Pets</Link>
+               
             </section>
             {/*Dashboard Page End*/}
             </Layout>
