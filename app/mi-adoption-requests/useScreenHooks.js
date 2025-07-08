@@ -13,6 +13,7 @@ export default function useScreenHooks() {
         try {
             if (!isLoading) show();
             const response = await ApiService.getMineAdoptionRequests();
+            console.log("Fetching all adoption requests...", response.data);
             setAdoptionRequests(response.data);
             hide();
         } catch (error) {

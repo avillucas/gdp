@@ -44,24 +44,30 @@ export default function Home() {
                             <td>{adoptionRequest.user.name}</td>
                             <td>{adoptionRequest.status}</td>
                             <td>{adoptionRequest.updated_at.substring(0, 10)}</td>
-                            <td>
-                              <button
-                                className="thm-btn become-volinteer__btn"
-                                onClick={(e) => {
-                                  handleApprove(e, adoptionRequest.id);
-                                }}
-                              >
-                                Aprobar
-                              </button>
-                              <button
-                                className="thm-btn become-volinteer__btn"
-                                onClick={(e) => {
-                                  handleReject(e, adoptionRequest.id);
-                                }}
-                              >
-                                Rechazar
-                              </button>
-                            </td>
+
+                            {adoptionRequest.status === 'pending' ?  (
+                              <td>
+                                <button
+                                  className="thm-btn become-volinteer__btn"
+                                  onClick={(e) => {
+                                    handleApprove(e, adoptionRequest.id);
+                                  }}
+                                >
+                                  Aprobar
+                                </button>
+                                <button
+                                  className="thm-btn become-volinteer__btn"
+                                  onClick={(e) => {
+                                    handleReject(e, adoptionRequest.id);
+                                  }}
+                                >
+                                  Rechazar
+                                </button>
+                              </td>
+                            ) : (
+                              <td></td>
+                            )}
+
                           </tr>
                         ))
                       ) : (
